@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content {
+    border-radius: 8px;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.wrapperList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+input {
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.closeButton {
+    height: 30px;
+    margin-top: 10px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+}
+button {
+    background-color: #9090da;
+    height: 30px;
+    margin-top: 70px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 20px rgba(52, 49, 56, 0.75);
+}
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: yellow;
+}
+.text {
+    text-decoration: underline;
+}
+.ulItem {
+    margin-top: 15px;
+    width: 200px;
+    height: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 4px 4px 20px rgba(185, 186, 185, 0.75);
+}
+.todoList {
+    margin-top: 40px;
 }
